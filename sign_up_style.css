@@ -1,0 +1,28 @@
+body {
+	background-color:grey;
+}
+
+input {
+	width: 300px;
+	height: 30px;
+	font-size: 15px;
+}
+
+.field {
+	display: block;
+}
+
+#boxdiv {
+	width:500px;
+	height:500px;
+	margin: 200px auto 0 auto;
+	background-color:#3CB371;
+	border:solid 5px black;
+	padding: 15px;
+}
+
+#submit {
+	background-color:4682B4;
+	margin-left: 20%;
+	border: 5px solid black;
+}

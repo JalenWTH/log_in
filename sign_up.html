@@ -1,0 +1,38 @@
+<html>
+<body>
+
+<head>
+<title>Sign Up</title>
+{% load static %}
+<link rel='stylesheet' type='text/css' href="{% static 'log_in/stylesheets/sign_up_style.css' %}">
+</head>
+
+<div id='boxdiv'>
+	<h3 style='text-align: center;'>Sign Up</h3>
+	<form method='post'>
+		{% csrf_token %}
+		<ul class='fieldslist'>
+			<label for='{{form.fname.name}}'>{{form.fname.label}}</label>
+			<li id='fname' class='field'>{{form.fname}}</li><br>
+			
+			<label for='{{form.lname.name}}'>{{form.lname.label}}</label>
+			<li id='lname' class='field'>{{form.lname}}</li><br>
+			
+			<label for='{{form.phone.name}}'>{{form.phone.label}}</label>
+			<li id='phone' class='field'>{{form.phone}}</li><br>
+			
+			<label for='{{form.email.name}}'>{{form.email.label}}</label>
+			<li id='email' class='field'>{{form.email}}</li><br>
+			
+			<label for='{{form.password.name}}'>{{form.password.label}}</label>
+			<li id='password' class='field'>{{form.password}}</li><br>
+		</ul>
+		<input type='submit' id='submit' name='submit'>
+	</form>
+	{% if signed_up == True %}
+		<h1>There is already an account registered with this email.</h2>
+	{% endif %}
+</div>
+
+</body>
+</html>

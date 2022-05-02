@@ -1,0 +1,40 @@
+<html>
+<body>
+
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<title>Log In</title>
+{% load static %}
+<link rel='stylesheet' type='text/css' href="{% static 'log_in/stylesheets/log_in_style.css' %}">
+</head>
+
+<div id='boxdiv'>
+	<form method='post'>
+	{% csrf_token %}
+	<ul id='fieldslist'>
+		<label for='form.email.name'>{{form.email.label}}</label>
+		<li id='email' class='field'>{{form.email}}</li><br>
+		
+		<label for='form.password.name'>{{form.password.label}}</label>
+		<li id='password' class='field'>{{form.password}}</label><br>
+	</ul>
+	<input type='submit' id='submit' name='submit'>
+	<button type='button' id='sign_up'>Sign Up</button>
+	</form>
+	{% if signed_up == False %}
+		<p id='error'>Your email or password are incorrect.</p>
+	{% endif %}
+</div>
+
+
+
+<script>
+$(document).ready(function() {
+	$('#sign_up').click(function() {
+		window.open('http://127.0.0.1:8000/log_in/sign_up')
+	})
+})
+</script>
+
+</body>
+</html>
