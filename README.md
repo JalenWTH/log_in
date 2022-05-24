@@ -28,7 +28,7 @@ A Django project can contain multiple apps. When you create the project, there w
 
 You can just name the app "login." 
 
-You will need to create two new Python files (forms.py and urls.py) for the app, all of the needed stylsheets, and some new directories. This is the app directory structure:
+You will need to create two new Python files (forms.py and urls.py) for the app, all of the needed stylesheets, and some new directories. This is the app directory structure:
 
 ```
 login
