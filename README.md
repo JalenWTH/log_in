@@ -22,7 +22,7 @@ To start a Django project, run this command in any directory you want:
 
 `django-admin startproject projectname`
 
-A Django project can contain multiple apps. When you create the project, there will be another directory inside of it with the same as the project. You will also have a manage.py file in the main directory. This file will be used to manage most actions concerning your project and associated apps. To create your first app, run this command in the project directory:
+A Django project can contain multiple apps. When you create the project, there will be another directory inside of it with the same name as the project. You will also have a manage.py file in the main directory. This file will be used to manage most actions concerning your project and associated apps. To create your first app, run this command in the project directory:
 
 `python manage.py startapp appname`
 
