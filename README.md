@@ -65,6 +65,7 @@ There is a urls.py file for the *project*, and a urls.py for the *app*. You need
 ```
 path('admin/', admin.site.urls),
 path('login/', include('login.urls'))
+```
 
 ## Running the app
   
