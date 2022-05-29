@@ -14,7 +14,7 @@ The path argument can simply be the name of your virtual environment if you just
 
 You can run `python -m django --version` to check your Django version.
 
-That's all you need to add to the virtual environment. To activate the virtual environment, run `C:/path/to/virtual/environment> activate`
+That's all you need to add to the virtual environment. To activate the virtual environment, run `my_virtual_environment/Scripts> activate`. Make sure you run the activate script in the Scripts directory of your virtual environment.
 
 ## Starting the project and app structure
 
